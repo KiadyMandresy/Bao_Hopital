@@ -79,12 +79,12 @@
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="pages/forms/insert_patient.jsp">Basic Elements</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../pages/forms/insert_patient.jsp">Patient</a></li>
               </ul>
             </div>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="pages/forms/insert_docteur.jsp">Docteur</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../pages/forms/insert_docteur.jsp">Docteur</a></li>
               </ul>
             </div>
           </li>
