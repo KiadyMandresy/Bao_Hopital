@@ -121,11 +121,11 @@
                     <div class="form-group">
                       <label for="exampleInputName1">Nom</label>
                       <input type="hidden" th:field="*{iddocteur}" />
-                      <input type="text" th:field="*{nom}" class="form-control" id="exampleInputName1" placeholder="Name">
+                      <input type="text" th:field="*{nom}" class="form-control" id="exampleInputName1" placeholder="Nom">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputEmail3">Niveau</label>
-                      <input type="email" th:field="*{niveau}" class="form-control" id="exampleInputEmail3" placeholder="Niveau">
+                      <input type="text" th:field="*{niveau}" class="form-control" id="exampleInputEmail3" placeholder="Niveau">
                     </div>
                     <div class="form-group">
                       <label>File upload</label>

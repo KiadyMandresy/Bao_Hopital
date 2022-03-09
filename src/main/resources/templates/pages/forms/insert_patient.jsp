@@ -121,19 +121,19 @@
                     <div class="form-group">
                       <label for="exampleInputName1">Nom</label>
                       <input type="hidden" th:field="*{idpatient}" />
-                      <input type="text" th:field="*{nom}" class="form-control" id="exampleInputName1" placeholder="Name">
+                      <input type="text" th:field="*{nom}" class="form-control" id="exampleInputName1" placeholder="Nom">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputEmail3">Prenom</label>
-                      <input type="email" th:field="*{prenom}" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                      <input type="text" th:field="*{prenom}" class="form-control" id="exampleInputEmail3" placeholder="Prenom">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputPassword4">Date de Naissance</label>
-                      <input type="password" th:field="*{datedenaissance}" class="form-control" id="exampleInputPassword4" placeholder="Password">
+                      <input type="date" th:field="*{datedenaissance}" class="form-control" id="exampleInputPassword4">
                     </div>
                     <div class="form-group">
                       <label for="exampleSelectGender">Sexe</label>
-                        <select class="form-control" id="exampleSelectGender" th:field="*{sexe}" >
+                        <select class="form-control" id="exampleSelectGender" th:field="*{sexe}"  >
                           <option>Male</option>
                           <option>Female</option>
                         </select>
