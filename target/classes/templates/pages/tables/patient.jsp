@@ -96,12 +96,12 @@
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../pages/tables/patient.jsp">Patient</a></li>
+                <li class="nav-item"> <a class="nav-link" href="patient.jsp">Patient</a></li>
               </ul>
             </div>
             <div class="collapse" id="tables">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="../../pages/tables/docteur.jsp">Docteur</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="docteur.jsp">Docteur</a></li>
                 </ul>
             </div>
           </li>
