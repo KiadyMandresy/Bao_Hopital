@@ -12,8 +12,6 @@
   <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
   <!-- endinject -->
   <!-- Plugin css for this page -->
-  <link rel="stylesheet" href="../../vendors/select2/select2.min.css">
-  <link rel="stylesheet" href="../../vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
   <!-- End plugin css for this page -->
   <!-- inject:css -->
   <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
@@ -23,7 +21,6 @@
 
 <body>
   <div class="container-scroller">
-    <!-- partial:../../partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
         <a class="navbar-brand brand-logo mr-5" href="../../index.jsp">HOPITAL</a>
@@ -81,17 +78,17 @@
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="insert_patient.jsp">Patient</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../pages/forms/insert_patient.jsp">Patient</a></li>
               </ul>
             </div>
             <div class="collapse" id="form-elements">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"><a class="nav-link" href="insert_docteur.jsp">Docteur</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../../pages/forms/insert_docteur.jsp">Docteur</a></li>
                 </ul>
               </div>
               <div class="collapse" id="form-elements">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"><a class="nav-link" href="attribuer_chambre.jsp">Attribuer Chambre</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../../pages/forms/attribuer_chambre.jsp">Attribuer Chambre</a></li>
                 </ul>
               </div>
           </li>
@@ -103,17 +100,17 @@
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../pages/tables/patient.jsp">Patient</a></li>
+                <li class="nav-item"> <a class="nav-link" href="patient.jsp">Patient</a></li>
               </ul>
             </div>
             <div class="collapse" id="tables">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="../../pages/tables/docteur.jsp">Docteur</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="docteur.jsp">Docteur</a></li>
                 </ul>
             </div>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../pages/tables/chambre.jsp">Attribuer Chambre</a></li>
+                <li class="nav-item"> <a class="nav-link" href="chambre.jsp">Chambre</a></li>
               </ul>
           </div>
           </li>
@@ -124,7 +121,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.jsp">
+            <a class="nav-link" href="../../pages/forms/login.jsp">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Se Connecter</span>
             </a>
@@ -132,47 +129,42 @@
         </ul>
       </nav>
       <!-- partial -->
-      <div class="main-panel">        
+      <div class="main-panel">
         <div class="content-wrapper">
           <div class="row">
-            <div class="col-12 grid-margin stretch-card">
+            <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Patient</h4>
-                  <form class="forms-sample" action="#" th:action="@{/save}" th:object="${patient}" method="post">
-                    <div class="form-group">
-                      <label for="exampleInputName1">Nom</label>
-                      <input type="hidden" th:field="*{idpatient}" />
-                      <input type="text" th:field="*{nom}" class="form-control" id="exampleInputName1" placeholder="Nom">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputEmail3">Prenom</label>
-                      <input type="text" th:field="*{prenom}" class="form-control" id="exampleInputEmail3" placeholder="Prenom">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword4">Date de Naissance</label>
-                      <input type="date" th:field="*{datedenaissance}" class="form-control" id="exampleInputPassword4">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleSelectGender">Sexe</label>
-                        <select class="form-control" id="exampleSelectGender" th:field="*{sexe}"  >
-                          <option>Male</option>
-                          <option>Female</option>
-                        </select>
-                      </div>
-                    <div class="form-group">
-                      <label>File upload</label>
-                      <input type="file" name="img[]" class="file-upload-default">
-                      <div class="input-group col-xs-12">
-                        <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
-                        <span class="input-group-append">
-                          <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
-                        </span>
-                      </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                    <button class="btn btn-light">Cancel</button>
-                  </form>
+                  <h4 class="card-title">A Comfirmer</h4>
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Nom</th>
+                          <th>Prenom</th>
+                          <th>Date_entree_lit</th>
+                          <th>Numero Chambre</th>
+                          <th>Numero Lit</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr  th:each="docteur : ${listdocteur}">
+                          <td class="py-1">
+                            <img src="../../images/faces/face1.jpg" alt="image"/>
+                          </td>
+                          <td th:text="${docteur.id}">Nom</td>
+                          <td th:text="${docteur.nom}">Prenom</td>
+                          <td th:text="${docteur.niveau}">Date_entree_lit</td>
+                          <td th:text="${docteur.nom}">Numero Chambre</td>
+                          <td th:text="${docteur.niveau}">Numero Lit</td>
+                      <td>
+                        <a th:href="@{'/edit/' + ${docteur.id}}"><label  class="badge badge-warning">ATTRIBUER</label></a>
+                      </td>     
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
@@ -195,8 +187,6 @@
   <script src="../../vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->
-  <script src="../../vendors/typeahead.js/typeahead.bundle.min.js"></script>
-  <script src="../../vendors/select2/select2.min.js"></script>
   <!-- End plugin js for this page -->
   <!-- inject:js -->
   <script src="../../js/off-canvas.js"></script>
@@ -206,9 +196,6 @@
   <script src="../../js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
-  <script src="../../js/file-upload.js"></script>
-  <script src="../../js/typeahead.js"></script>
-  <script src="../../js/select2.js"></script>
   <!-- End custom js for this page-->
 </body>
 

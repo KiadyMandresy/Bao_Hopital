@@ -113,7 +113,7 @@
             </div>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../pages/tables/chambre.jsp">Attribuer Chambre</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../..//tables/chambre.jsp">Attribuer Chambre</a></li>
               </ul>
           </div>
           </li>
@@ -138,40 +138,15 @@
             <div class="col-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Patient</h4>
-                  <form class="forms-sample" action="#" th:action="@{/save}" th:object="${patient}" method="post">
+                  <h4 class="card-title">Attribuer Lit</h4>
+                  <form class="forms-sample" action="#" th:action="@{/save}" th:object="${docteur}" method="post">
                     <div class="form-group">
-                      <label for="exampleInputName1">Nom</label>
-                      <input type="hidden" th:field="*{idpatient}" />
-                      <input type="text" th:field="*{nom}" class="form-control" id="exampleInputName1" placeholder="Nom">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputEmail3">Prenom</label>
-                      <input type="text" th:field="*{prenom}" class="form-control" id="exampleInputEmail3" placeholder="Prenom">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword4">Date de Naissance</label>
-                      <input type="date" th:field="*{datedenaissance}" class="form-control" id="exampleInputPassword4">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleSelectGender">Sexe</label>
-                        <select class="form-control" id="exampleSelectGender" th:field="*{sexe}"  >
-                          <option>Male</option>
-                          <option>Female</option>
-                        </select>
+                        <label for="exampleInputEmail3">Montant</label>
+                        <div class="form-group">
+                            <input type="text" th:field="*{datedenaissance}" class="form-control" id="exampleInputPassword4" placeholder="Inserer le montat de payment">
+                        </div>
                       </div>
-                    <div class="form-group">
-                      <label>File upload</label>
-                      <input type="file" name="img[]" class="file-upload-default">
-                      <div class="input-group col-xs-12">
-                        <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
-                        <span class="input-group-append">
-                          <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
-                        </span>
-                      </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                    <button class="btn btn-light">Cancel</button>
+                    <button type="submit" class="btn btn-primary mr-2">Payer</button>
                   </form>
                 </div>
               </div>

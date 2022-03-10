@@ -113,7 +113,7 @@
             </div>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../pages/tables/chambre.jsp">Attribuer Chambre</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/tables/chambre.jsp">Chambre</a></li>
               </ul>
           </div>
           </li>
@@ -138,7 +138,7 @@
             <div class="col-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Patient</h4>
+                  <h4 class="card-title">Fiche Payment</h4>
                   <form class="forms-sample" action="#" th:action="@{/save}" th:object="${patient}" method="post">
                     <div class="form-group">
                       <label for="exampleInputName1">Nom</label>
@@ -161,17 +161,24 @@
                         </select>
                       </div>
                     <div class="form-group">
-                      <label>File upload</label>
-                      <input type="file" name="img[]" class="file-upload-default">
-                      <div class="input-group col-xs-12">
-                        <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
-                        <span class="input-group-append">
-                          <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
-                        </span>
-                      </div>
+                        <label for="exampleInputPassword4">Date d'entree</label>
+                        <input type="date" th:field="*{datedenaissance}" class="form-control" id="exampleInputPassword4">
                     </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword4">Date de sortie</label>
+                        <input type="date" th:field="*{datedenaissance}" class="form-control" id="exampleInputPassword4">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail3">Nombre de jour a l'hopitale</label>
+                        <input type="text" th:field="*{prenom}" class="form-control" id="exampleInputEmail3" placeholder="Prenom">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail3">Etat de payement</label>
+                        <input type="text" th:field="*{prenom}" class="form-control" id="exampleInputEmail3" placeholder="Prenom">
+                    </div>
+                    <button class="btn btn-primary mr-2">Attribuer Chambre</button>
                     <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                    <button class="btn btn-light">Cancel</button>
+                    <button class="btn btn-primary mr-2">Traiter</button>
                   </form>
                 </div>
               </div>

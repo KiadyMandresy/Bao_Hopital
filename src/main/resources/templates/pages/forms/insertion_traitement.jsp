@@ -68,7 +68,7 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="../../index.jsp">
+            <a class="nav-link" href="index.jsp">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Home</span>
             </a>
@@ -138,40 +138,31 @@
             <div class="col-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Patient</h4>
-                  <form class="forms-sample" action="#" th:action="@{/save}" th:object="${patient}" method="post">
+                  <h4 class="card-title">Attribuer Lit</h4>
+                  <form class="forms-sample" action="#" th:action="@{/save}" th:object="${docteur}" method="post">
                     <div class="form-group">
-                      <label for="exampleInputName1">Nom</label>
+                        <label for="exampleInputEmail3">Lit</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <select class="btn btn-sm btn-outline-primary dropdown-toggle" id="cars" name="cars">
+                                <option value="Lit1">Lit 1</option>
+                                <option value="Lit1">Lit 2</option>
+                                <option value="Lit1">Lit 3</option>
+                                <option value="Lit1">Lit 4</option>
+                              </select>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                    <label for="exampleInputName1">Montant</label>
                       <input type="hidden" th:field="*{idpatient}" />
-                      <input type="text" th:field="*{nom}" class="form-control" id="exampleInputName1" placeholder="Nom">
+                      <input type="text" th:field="*{nom}" class="form-control" id="exampleInputName1" placeholder="Inserer le montant de payment">
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputEmail3">Prenom</label>
-                      <input type="text" th:field="*{prenom}" class="form-control" id="exampleInputEmail3" placeholder="Prenom">
+                      <label for="exampleInputEmail3">Traitement</label>
+                      <input type="text" th:field="*{prenom}" class="form-control" id="exampleInputEmail3" placeholder="Traitement">
                     </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword4">Date de Naissance</label>
-                      <input type="date" th:field="*{datedenaissance}" class="form-control" id="exampleInputPassword4">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleSelectGender">Sexe</label>
-                        <select class="form-control" id="exampleSelectGender" th:field="*{sexe}"  >
-                          <option>Male</option>
-                          <option>Female</option>
-                        </select>
-                      </div>
-                    <div class="form-group">
-                      <label>File upload</label>
-                      <input type="file" name="img[]" class="file-upload-default">
-                      <div class="input-group col-xs-12">
-                        <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
-                        <span class="input-group-append">
-                          <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
-                        </span>
-                      </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                    <button class="btn btn-light">Cancel</button>
+                    <button type="submit" class="btn btn-primary mr-2">Traiter</button>
                   </form>
                 </div>
               </div>

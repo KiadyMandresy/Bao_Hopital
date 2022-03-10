@@ -90,6 +90,11 @@
                   <li class="nav-item"><a class="nav-link" href="pages/forms/insert_docteur.jsp">Docteur</a></li>
                 </ul>
               </div>
+              <div class="collapse" id="form-elements">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"><a class="nav-link" href="pages/forms/attribuer_chambre.jsp">Attribuer Chambre</a></li>
+                </ul>
+              </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
@@ -107,9 +112,77 @@
                   <li class="nav-item"> <a class="nav-link" href="pages/tables/docteur.jsp">Docteur</a></li>
                 </ul>
             </div>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/tables/chambre.jsp">Chambre</a></li>
+              </ul>
+          </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/forms/login.jsp">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Gestion Corps Medical</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/forms/login.jsp">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Se Connecter</span>
+            </a>
           </li>
         </ul>
       </nav>
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-12 grid-margin">
+              <div class="row">
+                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                  <h3 class="font-weight-bold">GESTION HOPITALE</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card tale-bg">
+                <div class="card-people mt-auto">
+                  <img src="images/dashboard/people.svg" alt="people">
+                  <div class="weather-info">
+                    <div class="d-flex">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 grid-margin transparent">
+              <div class="row">
+                <div class="col-md-6 mb-4 stretch-card transparent">
+                  <div class="card card-tale">
+                    <div class="card-body">
+                      <a class="nav-link" href="pages/tables/patient.jsp">Patient</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4 stretch-card transparent">
+                  <div class="card card-tale">
+                    <div class="card-body">
+                      <a class="nav-link" href="#">Gerer Le corps medicale</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-4 mb-lg-0 stretch-card transparent">
+                  <div class="card card-tale">
+                    <div class="card-body">
+                      <a class="nav-link" href="pages/forms/login.jsp">Se Connecter</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
       <!-- partial -->
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
