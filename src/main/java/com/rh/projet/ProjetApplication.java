@@ -11,3 +11,4 @@ public class ProjetApplication {
 	}
 
 }
+//Applications/XAMPP/xamppfiles/htdocs/Bao_Hopital/src/main/resources/templates/index.jsp
