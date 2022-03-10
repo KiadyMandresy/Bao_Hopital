@@ -78,12 +78,17 @@
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="../../pages/forms/insert_patient.jsp">Patient</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/forms/insert_patient.jsp">Patient</a></li>
               </ul>
             </div>
             <div class="collapse" id="form-elements">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"><a class="nav-link" href="../../pages/forms/insert_docteur.jsp">Docteur</a></li>
+                  <li class="nav-item"><a class="nav-link" href="pages/forms/insert_docteur.jsp">Docteur</a></li>
+                </ul>
+              </div>
+              <div class="collapse" id="form-elements">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"><a class="nav-link" href="pages/forms/attribuer_chambre.jsp">Attribuer Chambre</a></li>
                 </ul>
               </div>
           </li>
@@ -95,14 +100,31 @@
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../pages/tables/patient.jsp">Patient</a></li>
+                <li class="nav-item"> <a class="nav-link" href="patient.jsp">Patient</a></li>
               </ul>
             </div>
             <div class="collapse" id="tables">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="../../pages/tables/docteur.jsp">Docteur</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="docteur.jsp">Docteur</a></li>
                 </ul>
             </div>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="chambre.jsp">Chambre</a></li>
+              </ul>
+          </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Gestion Corps Medical</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/forms/login.jsp">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Se Connecter</span>
+            </a>
           </li>
         </ul>
       </nav>

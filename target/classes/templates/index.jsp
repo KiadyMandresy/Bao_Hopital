@@ -90,6 +90,11 @@
                   <li class="nav-item"><a class="nav-link" href="pages/forms/insert_docteur.jsp">Docteur</a></li>
                 </ul>
               </div>
+              <div class="collapse" id="form-elements">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"><a class="nav-link" href="pages/forms/attribuer_chambre.jsp">Attribuer Chambre</a></li>
+                </ul>
+              </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
@@ -107,6 +112,23 @@
                   <li class="nav-item"> <a class="nav-link" href="pages/tables/docteur.jsp">Docteur</a></li>
                 </ul>
             </div>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/tables/chambre.jsp">Chambre</a></li>
+              </ul>
+          </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/forms/login.jsp">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Gestion Corps Medical</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/forms/login.jsp">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Se Connecter</span>
+            </a>
           </li>
         </ul>
       </nav>
@@ -138,24 +160,23 @@
                 <div class="col-md-6 mb-4 stretch-card transparent">
                   <div class="card card-tale">
                     <div class="card-body">
-                      <p class="mb-4">Lister Les Patients</p>
                       <a class="nav-link" href="pages/tables/patient.jsp">Patient</a>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6 mb-4 stretch-card transparent">
-                  <div class="card card-dark-blue">
+                  <div class="card card-tale">
                     <div class="card-body">
-                      <p class="mb-4">Gerer Le Corp Medicale</p>
+                      <a class="nav-link" href="#">Gerer Le corps medicale</a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6 mb-4 mb-lg-0 stretch-card transparent">
-                  <div class="card card-light-blue">
+                  <div class="card card-tale">
                     <div class="card-body">
-                      <p class="mb-4">Se Connecter</p>
+                      <a class="nav-link" href="pages/forms/login.jsp">Se Connecter</a>
                     </div>
                   </div>
                 </div>

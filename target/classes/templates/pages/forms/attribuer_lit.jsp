@@ -85,10 +85,15 @@
               </ul>
             </div>
             <div class="collapse" id="form-elements">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="insert_docteur.jsp">Docteur</a></li>
-              </ul>
-            </div>
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"><a class="nav-link" href="insert_docteur.jsp">Docteur</a></li>
+                </ul>
+              </div>
+              <div class="collapse" id="form-elements">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"><a class="nav-link" href="attribuer_chambre.jsp">Attribuer Chambre</a></li>
+                </ul>
+              </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
@@ -106,6 +111,23 @@
                   <li class="nav-item"> <a class="nav-link" href="../../pages/tables/docteur.jsp">Docteur</a></li>
                 </ul>
             </div>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../pages/tables/chambre.jsp">Chambre</a></li>
+              </ul>
+          </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Gestion Corps Medical</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.jsp">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Se Connecter</span>
+            </a>
           </li>
         </ul>
       </nav>
